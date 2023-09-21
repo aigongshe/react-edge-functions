@@ -19,7 +19,7 @@ export default function App({ req, isCold }) {
             <div class="info">
               <div class="block">
                 <div class="contents">
-                  <span>Your city</span>
+                  <span>你的城市</span>
                   <strong
                     title={
                       city === null
