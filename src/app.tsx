@@ -35,7 +35,7 @@ export default function App({ req, isCold }) {
 
               <div class="block">
                 <div class="contents">
-                  <span>Your IP address</span>
+                  <span>你的  IP 地址</span>
                   <strong>{ip}</strong>
                 </div>
               </div>
