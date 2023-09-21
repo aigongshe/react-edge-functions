@@ -422,7 +422,7 @@ function Footer() {
         
       </p> */}
 
-      <p class="details">
+      {/* <p class="details">
         Built with{' '}
         <a target="_blank" href="https://nextjs.org">
           React
@@ -431,9 +431,10 @@ function Footer() {
         <a target="_blank" href="https://vercel.com">
           Vercel
         </a>
-      </p>
+      </p> */}
 
-      <a
+
+      {/* <a
         target="_blank"
         href="https://github.com/vercel-labs/react-on-the-edge"
         class="source"
@@ -454,7 +455,8 @@ function Footer() {
           />
         </svg>
         Source
-      </a>
+      </a> */}
+
     </footer>
   );
 }
