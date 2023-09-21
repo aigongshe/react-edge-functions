@@ -405,7 +405,7 @@ function Card() {
 function Footer() {
   return (
     <footer>
-      <p class="company">
+      {/* <p class="company">
         <a target="_blank" href="https://vercel.com" aria-label="Vercel">
           <svg
             viewBox="0 0 4438 1000"
@@ -419,7 +419,8 @@ function Footer() {
             />
           </svg>
         </a>
-      </p>
+        
+      </p> */}
 
       <p class="details">
         Built with{' '}
