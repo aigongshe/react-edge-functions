@@ -386,6 +386,17 @@ function Card() {
         }}
       /> */}
 
+
+
+      <image
+        id="vercel-logo"
+        x="0"
+        y="0"
+        width="100"   <!-- 设置图像的宽度 -->
+        height="100"  <!-- 设置图像的高度 -->
+        xlink:href="https://tianma-1319332637.cos.ap-guangzhou.myqcloud.com/WechatIMG132.jpg"  <!-- 替换为您的图像文件路径 -->
+      />
+
       <g id="center">
         <path
           d="M420 202 v36 M 402 220h36"
