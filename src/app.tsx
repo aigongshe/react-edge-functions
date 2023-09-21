@@ -13,7 +13,7 @@ export default function App({ req, isCold }) {
 
           <main>
             <h1>
-              <span>Hello from the edge!</span>
+              <span>IOA 腾讯终端安全管理平台</span>
             </h1>
 
             <div class="info">
