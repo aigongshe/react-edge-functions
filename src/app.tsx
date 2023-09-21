@@ -21,10 +21,6 @@ export default function App({ req, isCold }) {
           <img src="/static/000111.png" alt="第一张照片" />
         </div>
         
-        {/* 第二张照片 */}
-        <div style={{ textAlign: 'center' }}>
-          <img src="/static/WechatIMG132.jpg" alt="第二张照片" />
-        </div>
       </div>
 
       <div class="info">
