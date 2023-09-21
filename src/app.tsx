@@ -16,25 +16,20 @@ export default function App({ req, isCold }) {
               <span>IOA 腾讯终端安全管理平台</span>
             </h1>
 
-            <div class="info">
-
+          <div className="info" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
             {/* 第一张照片 */}
             <div style={{ textAlign: 'center' }}>
               <img src="image_url_1" alt="第一张照片" />
             </div>
-          
+            
             {/* 第二张照片 */}
             <div style={{ textAlign: 'center' }}>
               <img src="image_url_2" alt="第二张照片" />
             </div>
-              
-            </div>
-
-            
+          </div>
 
 
-
-
+    
         
             <div class="info">
               
