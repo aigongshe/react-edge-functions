@@ -18,7 +18,7 @@ export default function App({ req, isCold }) {
       <div className="info" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
         {/* 第一张照片 */}
         <div style={{ textAlign: 'center' }}>
-          <img src="/static/WechatIMG132.jpg" alt="第一张照片" />
+          <img src="/static/000111.jpg" alt="第一张照片" />
         </div>
         
         {/* 第二张照片 */}
