@@ -5,68 +5,63 @@ export default function App({ req, isCold }) {
   const ip = (req.headers.get('x-forwarded-for') ?? '127.0.0.1').split(',')[0];
 
   return (
-    <html lang="en">
-      <Head />
-      <body>
-        <div style={{ height: '100%' }}>
-          <Card />
+<html lang="en">
+  <Head />
+  <body>
+    <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+      <Card />
 
-          <main>
-            <h1>
-              <span>IOA 腾讯终端安全管理平台</span>
-            </h1>
+      <main style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <h1>
+          <span>IOA 腾讯终端安全管理平台</span>
+        </h1>
 
-            <div className="info" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-              {/* 第一张照片 */}
-              <div style={{ textAlign: 'center' }}>
-                <img src="/static/WechatIMG132.jpg" alt="第一张照片" />
-              </div>
-              
-              {/* 第二张照片 */}
-              <div style={{ textAlign: 'center' }}>
-                <img src="/static/WechatIMG132.jpg" alt="第二张照片" />
-              </div>
-            </div>
-
-
-    
-        
-            <div class="info">
-              
-              <div class="block">
-                <div class="contents">
-                  <span>你的城市</span>
-                  <strong
-                    title={
-                      city === null
-                        ? 'GeoIP information could not be derived from your IP'
-                        : null
-                    }
-                    class={city === null ? 'na' : null}
-                  >
-                    {city === null ? 'N/A' : city}
-                  </strong>
-                </div>
-              </div>
-
-              <div class="block">
-                <div class="contents">
-                  <span>你的  IP 地址</span>
-                  <strong>{ip}</strong>
-                </div>
-              </div>
-
-              
-            </div>
-          </main>
-          <div class="debug">
-            Generated at {new Date().toISOString()} ({isCold ? 'cold' : 'hot'})
+        <div className="info" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+          {/* 第一张照片 */}
+          <div style={{ textAlign: 'center' }}>
+            <img src="/static/WechatIMG132.jpg" alt="第一张照片" />
+          </div>
+          
+          {/* 第二张照片 */}
+          <div style={{ textAlign: 'center' }}>
+            <img src="/static/WechatIMG132.jpg" alt="第二张照片" />
           </div>
         </div>
 
-        <Footer />
-      </body>
-    </html>
+        <div class="info">
+          <div class="block">
+            <div class="contents">
+              <span>你的城市</span>
+              <strong
+                title={
+                  city === null
+                    ? 'GeoIP information could not be derived from your IP'
+                    : null
+                }
+                class={city === null ? 'na' : null}
+              >
+                {city === null ? 'N/A' : city}
+              </strong>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="contents">
+              <span>你的  IP 地址</span>
+              <strong>{ip}</strong>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="debug">
+        Generated at {new Date().toISOString()} ({isCold ? 'cold' : 'hot'})
+      </div>
+    </div>
+
+    <Footer />
+  </body>
+</html>
+
   );
 }
 
