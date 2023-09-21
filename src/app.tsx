@@ -18,32 +18,16 @@ export default function App({ req, isCold }) {
 
             <div class="info">
 
-
-              <div class="block">
-                <div class="contents">
-                  <span>你的城市</span>
-                  <strong
-                    title={
-                      city === null
-                        ? 'GeoIP information could not be derived from your IP'
-                        : null
-                    }
-                    class={city === null ? 'na' : null}
-                  >
-                    {city === null ? 'N/A' : city}
-                  </strong>
-                </div>
-              </div>
-
-
-              <div class="block">
-                <div class="contents">
-                  <span>你的  IP 地址</span>
-                  <strong>{ip}</strong>
-                </div>
-              </div>
-
-
+            {/* 第一张照片 */}
+            <div style={{ textAlign: 'center' }}>
+              <img src="image_url_1" alt="第一张照片" />
+            </div>
+          
+            {/* 第二张照片 */}
+            <div style={{ textAlign: 'center' }}>
+              <img src="image_url_2" alt="第二张照片" />
+            </div>
+              
             </div>
 
             
